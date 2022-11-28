@@ -3,6 +3,7 @@ import streamlit as st
 import numpy as np
 
 import pickle
+from pickle import load 
 
 
 def main():
@@ -52,8 +53,7 @@ def main():
     st.success( diagnostique )
 
 
-if __name__ == "__main__":
-    main()
+
 
 
 #   streamlit run app.py
