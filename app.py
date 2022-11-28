@@ -2,10 +2,8 @@
 import streamlit as st
 import numpy as np
 
-import pickle
-from pickle import load 
-file_name="model.sav"
-load_model= pickle.load(open(file_name ,'rb'))
+import  joblib
+model=joblib.load("pipjoblib")
 
 def main():
 
@@ -16,7 +14,7 @@ def main():
     def diabete_prediction(entree_data):
         tableau_numpy = np.array(entree_data)
         input_data_reshape = tableau_numpy.reshape(1, -1)
-        prediction = load_model.predict(input_data_reshape)
+        prediction = model.predict(input_data_reshape)
 
         if (prediction[0]) == 1:
             return " La personne est  diabetique"
