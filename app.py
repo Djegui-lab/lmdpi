@@ -3,8 +3,7 @@ import streamlit as st
 import numpy as np
 
 import pickle
-file_name="model.sav"
-    load_model=  pickle.load(open(file_name ,'rb'))
+
 
 def main():
 
