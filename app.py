@@ -4,7 +4,8 @@ import numpy as np
 
 import pickle
 from pickle import load 
-
+file_name="model.sav"
+load_model= pickle.load(open(file_name ,'rb'))
 
 def main():
 
