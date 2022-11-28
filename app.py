@@ -3,10 +3,12 @@ import streamlit as st
 import numpy as np
 
 import pickle
-file_name="model.sav"
-load_model=  pickle.load(open(file_name ,'rb'))
+
 
 def main():
+    file_name="model.sav"
+    load_model=  pickle.load(open(file_name ,'rb'))
+
     st.title("APPLICATION MOBILE POUR LA DETECTION DE DIABETE")
     st.subheader("(AUTEUR: Mr.DJEGUI_WAGUE)")
 
